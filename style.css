@@ -1,0 +1,427 @@
+*
+{ 
+margin: 0;
+padding:0; 
+box-sizing: border-box;
+    
+}
+
+body 
+{
+
+    font-family: sans-serif monospace ;
+    height: 100vh;
+    
+}
+header{
+
+    display:flex;
+    justify-content: space-between;
+    height:10vh;
+    background: rgba(135, 207, 235, 0.767);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.container {
+
+    background: url(img/kids-block.jpg);
+    background-repeat: round;
+    object-fit: scale-down;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    filter:blur(2px);
+    opacity: .9;
+    
+}
+
+ .main-box{
+
+    margin: 5rem auto;
+    display: inline-block;
+    position: absolute;
+    bottom:10rem;
+    align-items: center;
+}
+
+.main-box ul li{
+
+    margin: 1.5rem ;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+ .banner{
+    width:100%;
+    position: absolute; 
+    align-items: center;
+    justify-content: space-between;
+    top: 30rem;
+    display:flex;
+}
+
+.banner ul li {
+
+    display:inline-block; 
+    justify-content: space-between;
+    width: 80px;
+    height: 80px;
+    margin: 2rem;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient( rgba(179, 41, 221, 0.5), rgba(156,324,562,0.6));
+}
+
+.banner ul li:nth-child(1){
+    position: relative;
+    right:3rem;
+    top: -2rem;
+
+}
+.banner ul li:nth-child(2){
+    position: relative;
+    right:2rem;
+    top: 1rem;
+
+}
+
+.banner ul li:nth-child(3){
+    position: relative;
+    left: 1rem;
+    top: 2rem;
+    transition: .3s;
+
+
+}
+
+.banner h4{
+
+    font-size: 80px;
+    background:rgba(64, 179, 224, 0.514) ;
+    width: 17.5rem;
+    height: 6.7rem;
+    border-radius: 10px 75px 75px 10px;
+    transition: .5s;
+}
+
+.banner ul li:hover{
+
+    background: linear-gradient(95deg, rgba(221, 149, 41, 0.932), rgba(156,324,562,0.6));
+    transition: 1s;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.banner ul li:hover a{
+
+    color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+
+
+.banner ul li a{
+
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    margin: 1.7rem 1.1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+
+.time-and-date{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    background: #2c3e50 ;
+    height:10vh;
+    width: 100%;
+    color: white;
+    position: relative;
+    margin-top: 4.1rem ;
+}
+
+
+.logo{
+
+    position: relative;
+    top: 1rem;
+    left: .5rem;
+}
+
+.time-and-date .content .day,.date,.year{
+    display: inline-block;
+    font-size: 25px;
+    margin:0 .5rem ;
+}
+
+.time-and-date .content .day{
+
+    position: relative;
+    left: 1.5rem;
+}
+
+.time-and-date .content .hour,.min,.secs{
+
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 .6rem ;
+    background: linear-gradient(95deg, rgba(179, 41, 221, 0.5), rgba(156,324,562,0.6));
+    padding: 8px;
+    opacity: .9;
+    box-shadow: 3px 3px white;
+
+}
+
+
+.time-and-date .content{
+    display: inline-block;
+    justify-content: space-between;
+    margin: .7rem auto;
+}
+
+.time-and-date .content .date{
+
+    font-size: 27px;
+    display: inline-block;
+    position: relative;
+    margin-left: 2.5rem;
+    z-index: 2;
+
+}
+
+
+
+header nav ul li{
+
+    display: inline-block;
+    
+}
+
+.hide-mobile{
+
+    display: none;
+}
+.nav-ham .ham{
+
+    cursor:pointer;
+
+}
+
+.nav li a{
+
+    position: relative;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in ;
+    
+
+}
+
+.nav{
+
+    background:black;
+    position: fixed;
+    width: 13rem;
+    height:13rem;
+    align-items: center;
+    right:0%;
+    bottom:0%;
+    border-radius: 70% 0 0 5%;
+    transition: .5s;
+
+}
+
+.nav li a:hover{
+
+    transition: .3s ease-in-out;
+    animation-name: example;
+    animation-duration: 4s;
+
+}
+
+@keyframes example {
+    0%   {border-bottom: 2px solid white;}
+    
+}
+
+.nav li{
+
+    position: relative;
+    display:block;
+    top: 3rem;
+    right: 1rem;
+    margin: 15px 0;
+}
+
+.nav-ham {
+    position: fixed;
+    z-index: 3 ;
+    background:linear-gradient(95deg, rgba(179, 41, 221, 0.5), rgba(156,324,562,0.6));
+    height: 3rem ;
+    width:3rem;
+    top: 92%;
+    left: 88%;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+
+.nav-ham .ham
+{
+
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 2.5rem;
+    background: rgb(0, 0, 0); 
+    height: .3rem;  
+    margin-bottom:.4rem;
+}
+
+
+.exit{
+    width: 35px;
+    z-index: 3;
+    position: relative;
+    top:-1rem ;
+    left: 10rem;
+    background: white ; 
+    border-radius: 50%;
+
+}
+
+
+footer{
+
+    height: 30vh;
+    background:#2c3e50 ;
+    align-items: center;
+}
+
+footer ul li a {
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size:17px ;
+    position: relative;
+    top: 7px;
+    left: 12px; 
+}
+
+footer ul .box{
+
+    display: inline-block;
+}
+
+footer .social-links .box:hover li{
+    transform: translate(10px 5px);
+}
+
+
+
+footer ul li {
+    position: relative; 
+    display: inline-block;
+    top: 3rem;
+    left: 4rem;
+    align-items: center;
+    margin: 0 1.5rem;
+    background: linear-gradient(30deg, rgba(53, 167, 219, 0.781), rgba(219, 53, 211, 0.781));
+    width:5rem;
+    height: 2rem;
+    border-radius: 25px;
+    box-shadow: 4px 5px black;
+}
+
+footer ul li a:hover {
+    transition: .3s;
+    color: rgb(255, 255, 255);
+}
+
+footer ul li:hover{
+
+    transform: translate(10px 5px );
+}
+
+footer .copyright{
+
+    position: relative;
+    top: 5.5rem;
+    justify-content: center;
+    margin: .7rem 6rem ;
+}
+
+footer .copyright h4:nth-child(2){
+
+    margin: 0rem 3rem;
+}
+
+@media screen and (min-width: 992px) {
+   
+    .logo{
+        position: relative;
+        left:45%;
+    }
+
+    .time-and-date .content{
+
+        position: relative;
+        left:35%; 
+
+    }
+
+    footer{
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    .box {
+        position: relative;
+        left:30%;
+
+    }
+
+    footer .copyright{
+        
+        position: relative ;
+        
+
+    }
+
+    
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
